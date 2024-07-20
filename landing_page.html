@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RoastRealm</title>
+  <link rel="stylesheet" href="landing_page_style.css">
+</head>
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+      <a href="#" class="logo"><img src="coco1.png"></a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">What's New</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>  
+    <div class="content">
+      <div class="textBox">
+        <h2>It's not just a Drink<br>It's <span>Coca-Cola</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, veniam nesciunt? Placeat iure quo iste, eos molestiae repudiandae, tenetur nam consequuntur modi, animi iusto aliquam explicabo eius esse praesentium eveniet obcaecati similique qui itaque vero? Explicabo consequuntur rem laudantium voluptate, sapiente deleniti molestias, officia reprehenderit, tenetur aliquid quod illo iure.</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="imgBox">
+        <img src="img1.png" class="star">
+      </div>
+    </div>
+    <ul class="thumb">
+      <li><img src="thumb1.png" onclick="imgSlid('img1.png'); circleColor('rgb(226, 61, 61)')"></li>
+      <li><img src="thumb2.png" onclick="imgSlid('img2.png'); circleColor('black')"></li>
+      <li><img src="thumb3.png" onclick="imgSlid('img3.png'); circleColor('rgb(63, 63, 196)')"></li>
+    </ul>  
+    <ul class="sci">
+      <li><a href="#"><img src="facebook.png" alt=""></a></li>
+      <li><a href="#"><img src="instagram.png" alt=""></a></li>
+      <li><a href="#"><img src="twitter.png" alt=""></a></li>
+    </ul>   
+  </section>
+  <script>
+    function imgSlid(anything){
+      document.querySelector('.star').src = anything;
+    }
+    function circleColor(color){
+      const circle = document.querySelector('.circle');
+      circle.style.background = color;
+    }
+  </script>
+</body>
+</html>
